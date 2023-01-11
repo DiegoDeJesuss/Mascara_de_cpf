@@ -17,7 +17,7 @@ def mascara_de_cpf():
   #tirar os traços (-)
   cpf = cpf.replace('-', '')
   if len(cpf) == 11 and cpf.isnumeric():
-      cpf = ("{}{}{}.{}{}{}.{}{}{}-{}".format(*cpf))
+      cpf = ("{}{}{}.{}{}{}.{}{}{}-{}{}".format(*cpf))
       print(cpf)
   else:
       print('Digite seu CPF corretamente e digite apenas números')
